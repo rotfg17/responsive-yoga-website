@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    text-decoration: none;
+}
+
+:root {
+    --gradient-color: linear-gradient(45deg, #FF52AF, #9F53FF 100%);
+    --first-color-light: #E5D9FD;
+    --first-color-dark: #1E0849;
+    --title-color: #220953;
+    --text-color:#220953;
+    --text-color-light:#A197B4;
+    --white-color: #FFFFFF;
+    --body-color: #F5F0FF;
+    --container-color: #FFFFFF;
+    --dark-title-color: #D1C0F1;
+    --dark-text-color: #A094B8;
+    --dark-body-color: #14092A;
+    --dark-container-color: #372A51;
+    --g1: linear-gradient(to right,#FD6767 0%, #B900C9 100%);
+}
+
+body {
+    background-color: var(--body-color)
+}
+#section4 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    background-color: var(--gradient-color);
+}
+#box4-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    text-align: start;
+    gap: 10%;
+}
+#box4-2 picture {
+    display: flex;
+    justify-content: center;
+}
+#box4-2 {
+    margin-right: 10%;
+}
+h1 {
+    font-size: 4rem;
+    font-family: 'lora';
+    font-weight: 400;
+    margin: 0px;
+    color: var(--title-color);
+}
+button {
+    background: linear-gradient(45deg, #FF52AF, #9F53FF 100%);
+    color: var(--white-color);
+    border: none;
+    font-weight: 600;
+}
+p {
+    font-family: 'poppins';
+    color: var(--text-color);
+}
+#button4-1 {
+    font-family: 'poppins';
+    width: 40%;
+    align-self: start;
+    height: 40px;
+    border-radius: 20px;
+}
+#box5-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+#text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#yoga {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+#button5-1{
+    font-family: 'poppins';
+    height: 15%;
+    border-radius: 300px;
+    width: 15%;
+    align-self: center;
+    position: relative;
+    top: 20%;
+}
+#box5-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+#newsletter{
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    padding: 5%;
+    background: var(--gradient-color);
+    border-radius: 30px;
+}
+#newsletter h1 {
+    color: var(--white-color);
+}
+#newsletter p {
+    color: var(--white-color);
+}
+#section6 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#button6-1{
+    font-family: 'poppins';
+    height: 40px;
+    border-radius: 20px;
+    width: 30%;
+    align-self: center;
+    position: relative;
+    bottom: 20.5%;
+    left: 34%;
+}
+input {
+    height: 50px;
+    border-radius: 70px;
+    border-color: transparent;
+}
+input::placeholder{
+    font-family: 'poppins';
+    text-align: center;
+    padding-right: 20%;
+}
+footer {
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    color: white;
+    background-color: black;
+}
+footer p {
+    color: white;
+
+}
+#footer1 {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-bottom: solid;
+}
+#footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+#sroutine1{
+    position: relative;
+    top: 22%;
+    left: 25%;
+    z-index: 2;
+}
+#broutine1 {
+    position: relative;
+    right: 10%;
+    top: 5%;
+}
+#broutine2 {
+    position: relative;
+    bottom: 5%;
+    left: 10%;
+    z-index: -1;
+}
+#sroutine2 {
+    position: relative;
+    z-index: 2;
+    bottom: 19%;
+    right: 24%;
+}

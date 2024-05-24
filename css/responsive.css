@@ -1,3 +1,74 @@
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+    #menu-icon {
+        display: inline;
+        font-size: 3rem;
+    }
+    .nav-list {
+        position: fixed;
+        top: 80px;
+        right: 100vw;
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        transition: all .55s ease;
+        background: rgba(255, 255, 255, 0.427);
+        margin-left: 15rem;
+    }
+
+    .nav-list a {
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .nav-list.open {
+        right: 0;
+    }
+
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+        padding-top: 115px;
+    }
+    .hero-text h3 {
+        font-size: 40px;
+        margin: 0 0 30px;
+    }
+
+    .hero-text-p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*==============================END FIRST SECTION OR BANNER CODE===============================*/
+
+    .second-section{
+        padding: 15px 3%;
+        display: grid;
+        grid-template-columns:  1fr;
+        align-items: center;
+    }
+
+    /* .second-section-title,
+    .second-img {
+        display: flex;
+        flex-direction: column;
+    } */
+
     
 }

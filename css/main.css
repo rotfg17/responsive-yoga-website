@@ -71,17 +71,26 @@ header {
 
 .nav-list a{
     position: relative;
-    left: 15rem;
-    margin-left: 60px;
+    left: 10rem;
+    padding-left: 60px;
     font-size: 18px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
 
+.bx-moon {
+    position: relative;
+    bottom: 8px;
+    color: var(--title-color);
+    font-size: 2rem;
+    z-index: 10001;
+    cursor: pointer;
+    padding-right: 1rem;
+}
 #menu-icon {
-    color: white;
-    font-size: 35px;
+    color: var(--title-color);
+    font-size: 4rem;
     z-index: 10001;
     cursor: pointer;
     display: none;

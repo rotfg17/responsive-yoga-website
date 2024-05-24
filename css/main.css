@@ -1,0 +1,188 @@
+:root {
+    --gradient-color: linear-gradient(45deg, #FF52AF, #9F53FF 100%);
+    --first-color-light: #E5D9FD;
+    --first-color-dark: #1E0849;
+    --title-color: #220953;
+    --text-color:#220953;
+    --text-color-light:#A197B4;
+    --white-color: #FFFFFF;
+    --body-color: #F5F0FF;
+    --container-color: #FFFFFF;
+    --dark-title-color: #D1C0F1;
+    --dark-text-color: #A094B8;
+    --dark-body-color: #14092A;
+    --dark-container-color: #372A51;
+    --g1: linear-gradient(to right,#FD6767 0%, #B900C9 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+/*==============================START HEADER OR NAVEGATION CODE===============================*/
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo .logo-text-gradient {
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+.logo-text-gradient {
+    font-size: 3rem;
+    font-weight: 400;
+    background:  linear-gradient(45deg, #FF52AF, #9F53FF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a{
+    position: relative;
+    left: 15rem;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+/*==============================END HEADER OR NAVEGATION CODE===============================*/
+
+/*==============================START FIRST SECTION OR BANNER CODE===============================*/
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+section {
+    padding: 0 16%;
+}
+
+.hero-text h3{
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.hero-text-gradient {
+    background: var(--gradient-color);
+    color: var(--container-color);
+    padding: 8px;
+    border-radius: 1rem;
+    display: inline-block;
+    transform:rotate(10deg);
+}
+
+.hero-text-p {
+    width: 58%;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    padding-bottom: 30px;
+}
+
+.btn-hero {
+    padding: 15px 30px;
+    background: var(--gradient-color);
+    border-radius: 50px;
+    color: var(--container-color);
+    font-size: 1.2rem;
+}
+
+#arrow {
+    position: relative;
+    top: 3px;
+    transform: rotate(180deg);
+}
+
+.class {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5rem;
+}
+
+/*==============================END FIRST SECTION OR BANNER CODE===============================*/
+
+/*==============================START SECOND SECTION CODE===============================*/
+.second-section{
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.second-section-title {
+    position: relative;
+    top: 0;
+    left: 15rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.second-text {
+    padding: 30px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.btn-second {
+    position: relative;
+    bottom: 4rem;
+    right: 10.5rem;
+    padding: 13px 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background:  linear-gradient(45deg, #FF52AF, #9F53FF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*==============================END SECOND SECTION CODE===============================*/
+
+/*==============================START THIRD SECTION CODE===============================*/
+

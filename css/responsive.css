@@ -1,4 +1,4 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 376px) {
     header {
         padding: 15px 3%;
         transition: .2s;
@@ -8,10 +8,11 @@
         display: inline;
         font-size: 3rem;
     }
+
     .nav-list {
         position: fixed;
         top: 80px;
-        right: 100vw;
+        right: -100vw;
         width: 100vw;
         height: 50vh;
         display: flex;
@@ -19,7 +20,6 @@
         justify-content: start;
         transition: all .55s ease;
         background: rgba(255, 255, 255, 0.427);
-        margin-left: 15rem;
     }
 
     .nav-list a {
@@ -27,6 +27,7 @@
         display: block;
         margin: 7px 0;
     }
+
     .nav-list.open {
         right: 0;
     }
@@ -45,6 +46,7 @@
     .hero-text {
         padding-top: 115px;
     }
+
     .hero-text h3 {
         font-size: 40px;
         margin: 0 0 30px;
@@ -55,20 +57,244 @@
         text-align: center;
     }
 
-    /*==============================END FIRST SECTION OR BANNER CODE===============================*/
-
-    .second-section{
+    .second-section {
         padding: 15px 3%;
         display: grid;
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 
-    /* .second-section-title,
-    .second-img {
-        display: flex;
-        flex-direction: column;
-    } */
+    .second-wrap {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
 
-    
+    .second-section-title {
+        position: relative;
+        top: 6rem;
+        width: 100%; 
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    .second-img {
+        width: 100%; 
+        max-width: 250px;
+        margin: 0 auto; 
+    }
+
+    .second-text {
+        font-size: 1rem;
+        color: var(--text-color);
+    }
+
+    .btn-second {
+        position: relative;
+        bottom: 6rem;
+        left: 4rem; 
+        padding: 13px 25px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        background: linear-gradient(45deg, #FF52AF, #9F53FF);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+
+    /*==============================START THIRD SECTION CODE===============================*/
+    .third-section {
+        padding: 15px 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "text"
+        "image";
+    }
+
+    .third-text {
+        grid-area: text;
+    }
+    .hero-img-third {
+        grid-area: image;
+    }
+    .hero-img-third img{
+        width: 100%;
+        height: auto;
+    }
+
+    .third-text h3{
+        font-size: 2rem;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: var(--text-color);
+        padding-bottom: 30px;
+    }
+
+    .third-text-p{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .top-info {
+        display: block;
+        position: relative;
+        top: 8.5rem;
+        left: 1rem;
+        width: 45%;
+        background: var(--container-color);
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .bott-info {
+        display: block;
+        position: relative;
+        bottom: 5rem;
+        left: 11.5rem;
+        width: 40%;
+        background: var(--container-color);
+        border-radius: 10px;
+        padding: 0.5rem;   
+    }
+
+    .btn-hero {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*==============================START FOUR SECTION CODE===============================*/
+    #section4 {
+        grid-template-columns: 1fr; 
+        grid-gap: 10px;
+        padding: 10px; 
+    }
+
+    #box4-1 {
+        padding-left: 5%; 
+        text-align: center; 
+        gap: 20px;
+    }
+
+    #box4-2 {
+        margin-right: 0; 
+        text-align: center; 
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    button {
+        width: 80%; 
+        height: 50px; 
+        font-size: 1rem;
+    }
+
+    #button4-1 {
+        width: 100%; 
+        height: 50px;
+    }
+
+    #box5-1, #box5-2 {
+        flex-direction: column; 
+        margin: 5%; 
+        align-items: center; 
+    }
+
+    #text-box {
+        text-align: center; 
+    }
+
+    #button5-1 {
+        width: 80%; 
+        height: 50px; 
+        border-radius: 25px; 
+        top: 10%; 
+    }
+
+    #newsletter {
+        width: 100%; 
+        padding: 10%; 
+        gap: 20px;
+    }
+
+    #section6 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #button6-1 {
+        width: 80%; 
+        height: 50px;
+        bottom: 0;
+        left: 0; 
+        margin-top: 20px;
+    }
+
+    input {
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    input::placeholder {
+        text-align: center; 
+        padding-right: 0; 
+    }
+
+    footer {
+        padding: 5%; 
+        text-align: center;
+    }
+
+    #footer1 {
+        grid-template-columns: 1fr; 
+    }
+
+    #footer2 {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    #sroutine1, #broutine1, #broutine2, #sroutine2 {
+        position: static; 
+        margin: 10px 0; 
+    }
+
+    .box4-img {
+        width: 80%;
+        margin: 0 auto; 
+    }
+    .border-img{
+        position: relative;
+        top: 3rem;
+        right: 2rem;
+    }
+
+    .hight {
+        width: 50%;
+        position: relative;
+        top: 8rem;
+        left: 3rem;
+        z-index: 100001;
+    }
+    .bottom {
+        width: 50%;
+        position: relative;
+        top: -5rem;
+        right: 5rem;
+    }
+
+    #section5 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "text-box"
+        "yoga-img";
+    }
+
+
+
 }

@@ -110,7 +110,7 @@ header {
 }
 
 section {
-    padding: 0 16%;
+    padding: 0 13%;
 }
 
 .hero-text h3{
@@ -165,11 +165,14 @@ section {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
 }
-
+.second-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 .second-section-title {
     position: relative;
-    top: 0;
-    left: 15rem;
+    top: 6rem;
+    left: 0;
     font-size: 4rem;
     font-weight: 600;
     color: var(--text-color);
@@ -180,7 +183,9 @@ section {
     font-size: 1.1rem;
     color: var(--text-color);
 }
-
+.btn-section{
+    padding: 15px 30px;
+}
 .btn-second {
     position: relative;
     bottom: 4rem;

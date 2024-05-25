@@ -18,6 +18,28 @@
     --g1: linear-gradient(to right,#FD6767 0%, #B900C9 100%);
 }
 
+/* Variables de tema oscuro */
+body.dark-theme {
+    --gradient-color: linear-gradient(45deg, #FF52AF, #9F53FF 100%);
+    --first-color-light: #1E0849;
+    --first-color-dark: #E5D9FD;
+    --title-color: #D1C0F1;
+    --text-color: #A094B8;
+    --text-color-light: #A094B8;
+    --white-color: #14092A;
+    --body-color: #14092A;
+    --container-color: #372A51;
+    --dark-title-color: #220953;
+    --dark-text-color: #220953;
+    --dark-body-color: #F5F0FF;
+    --dark-container-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,9 +48,6 @@
     text-decoration: none;
 }
 
-body {
-    background-color: var(--body-color);
-}
 
 /*==============================START HEADER OR NAVEGATION CODE===============================*/
 
@@ -108,6 +127,8 @@ header {
     align-items: center;
     gap: 1rem;
 }
+
+
 
 section {
     padding: 0 13%;
@@ -189,7 +210,7 @@ section {
 .btn-second {
     position: relative;
     bottom: 4rem;
-    right: 10.5rem;
+    right: 8.5rem;
     padding: 13px 25px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -266,7 +287,6 @@ section {
     border-radius: 10px;
     padding: 0.5rem;   
 }
-
 /*==============================END THIRD SECTION CODE===============================*/
 
 /*==============================START ALL THE DIEGOS'S SECTIONS CODE===============================*/

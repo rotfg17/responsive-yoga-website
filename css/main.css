@@ -22,7 +22,7 @@
 body.dark-theme {
     --gradient-color: linear-gradient(45deg, #FF52AF, #9F53FF 100%);
     --first-color-light: #1E0849;
-    --first-color-dark: #E5D9FD;
+    --first-color-dark: #14092A;
     --title-color: #D1C0F1;
     --text-color: #A094B8;
     --text-color-light: #A094B8;
@@ -417,7 +417,7 @@ footer {
     padding-right: 10%;
     padding-bottom: 5%;
     color: white;
-    background-color: black;
+    background-color: var(--first-color-dark);
 }
 footer p {
     color: white;
@@ -426,13 +426,18 @@ footer p {
 #footer1 {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    border-bottom: solid;
+    border-bottom: 1px solid var(--text-color-light);
 }
 #footer2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 1rem;
+}
+
+.footer2-text {
+    color: var(--text-color-light);
 }
 img {
     cursor: pointer;
